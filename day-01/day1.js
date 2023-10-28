@@ -67,3 +67,49 @@ var firstNum = 25;
 var secondNum = 15;
 var reminder = firstNum % secondNum;
 console.log(reminder);
+
+// shorthand of addition 
+
+var sum = 23;
+var sum = sum + 10;
+console.log(sum);
+
+var Num = 25;
+Num+=10;
+console.log(Num);
+
+// shorthand of subtraction
+var sub = 23;
+var sub = sub - 10;
+console.log(sub);
+
+var Num = 25;
+Num-=10;
+console.log(Num);
+
+// shorthand of multiplication
+var mult = 23;
+var mult = mult * 10;
+console.log(mult);
+
+var Num = 25;
+Num*=10;
+console.log(Num);
+
+// shorthand of division
+var divi = 23;
+var divi = divi / 10;
+console.log(divi);
+
+var Num = 25;
+Num/=10;
+console.log(Num);
+
+// shorthand of reminder
+var rim = 23;
+var rim = rim % 10;
+console.log(rim);
+
+var Num = 25;
+Num%=10;
+console.log(Num);
