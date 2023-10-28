@@ -1,0 +1,1 @@
+// How to declare variable in JavaScript
