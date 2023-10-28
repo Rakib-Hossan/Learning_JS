@@ -113,3 +113,5 @@ console.log(rim);
 var Num = 25;
 Num%=10;
 console.log(Num);
+
+
