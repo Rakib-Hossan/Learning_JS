@@ -32,6 +32,14 @@ var age = 18;
 // Boolean data type
 var isTrue = true; // the boolean data type returns only true or false
 
+// Undefined data type 
+var job;
+
+// how to check data type of any variable 
+var myName = "rakib";
+console.log(typeof(myName));// we used typeof function to find data type of variable
+
+
 // to see output using js 
 
 console.log("rakib");
@@ -114,4 +122,37 @@ var Num = 25;
 Num%=10;
 console.log(Num);
 
+// To increase and decrease value of any variable we use ++ and -- symbol 
+// Example of increase value 
+var num =12;
+ num++;
+ var newNum = num;
+ console.log(newNum);
 
+// Example of decrease value 
+var num =12;
+ num--;
+ var newNum = num;
+ console.log(newNum);
+
+// concatenation of string . concatenation means adding string from two different variable.
+var firstName = "rakib";
+var secondName = "hossan";
+var fullName = firstName + secondName;
+console.log(fullName);
+
+// how to convert data type
+
+// string to integer value 
+var rollNo = "25";
+console.log(typeof(rollNo));
+var roll = parseInt(rollNo)// we use parseInt or parseFloat to convert string into integer or float.
+console.log(typeof(roll));
+
+// To used toFixed function to fixed floating number.
+var numOne =0.25;
+var numTwo = 0.2154;
+var multi = numOne * numTwo;
+var newAns = multi.toFixed(2);
+var ans = parseFloat(newAns);
+console.log(ans);
