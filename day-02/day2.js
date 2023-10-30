@@ -86,3 +86,29 @@ console.log(numOne>=numTwo && numOne==numTwo); //when all condition are true the
 var numOne = 25;
 var numTwo = 14;
 console.log(numOne>=numTwo || numOne==numTwo); //when any condition are true then we see true
+
+// if statement
+var exam = "passed";
+if(exam == "passed"){
+    console.log("your are eligible for job");
+}
+
+// if..else statement
+var money = 1000;
+if(money >=1250){
+    console.log("you will be join the session")
+}
+else{
+    console.log("you will not be join the session");
+}
+
+// if...else statement with multiple condition 
+
+// and operator 
+var mark = 85;
+if (mark<=100 && mark>=80){
+    console.log("you got A+")
+}
+else{
+    console.log('you are unable to got A+')
+}
