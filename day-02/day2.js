@@ -54,3 +54,35 @@ console.log(picnicFee);
 var picnicFee = [500, 450, 480, 470, 570];
 picnicFee.shift();
 console.log(picnicFee);
+
+// comparison operator 
+
+// comparison with > operator
+console.log(6>4);
+
+// comparison with < operator
+console.log(6<4);
+
+// comparison with >= operator
+console.log(6>=5);
+
+// comparison with <= operator
+console.log(6<=5);
+
+// comparison with == operator
+console.log(6==6);
+
+// comparison with != operator
+console.log(6!=6);
+
+// logical operator 
+
+// and (&&) operator 
+var numOne = 25;
+var numTwo = 14;
+console.log(numOne>=numTwo && numOne==numTwo); //when all condition are true then we see true
+
+// or (||) operator 
+var numOne = 25;
+var numTwo = 14;
+console.log(numOne>=numTwo || numOne==numTwo); //when any condition are true then we see true
