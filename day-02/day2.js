@@ -34,3 +34,23 @@ console.log(picnicFee);
 // how find index of an element 
 var picnicFee = [500, 450, 480, 470, 570];
 console.log(picnicFee.indexOf(480));
+
+// how to add new element in an array 
+var picnicFee = [500, 450, 480, 470, 570];
+picnicFee.push(540); // push method add new element to the end of the array
+console.log(picnicFee);
+
+// how to add new element in an array 
+var picnicFee = [500, 450, 480, 470, 570];
+picnicFee.unshift(540); // unshift method add new element to the beginning of the array
+console.log(picnicFee);
+
+// how to add remove last element from an array 
+var picnicFee = [500, 450, 480, 470, 570];
+picnicFee.pop();
+console.log(picnicFee);
+
+// how to add remove first element from an array 
+var picnicFee = [500, 450, 480, 470, 570];
+picnicFee.shift();
+console.log(picnicFee);
