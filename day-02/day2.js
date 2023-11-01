@@ -1,8 +1,6 @@
 /*
-
 what is array?
---> An array is like a container who can hold many values under a single variable, and we can access the values by referring to an index number.
-
+=> An array is like a container who can hold many values under a single variable, and we can access the values by referring to an index number.
 */
 
 // how to declare an array 
@@ -107,8 +105,27 @@ else{
 // and operator 
 var mark = 85;
 if (mark<=100 && mark>=80){
-    console.log("you got A+")
+    console.log("you got A+");
 }
 else{
-    console.log('you are unable to got A+')
+    console.log('you are unable to got A+');
+}
+
+// nested if...else statement 
+
+var mark = 50;
+
+if(mark>=80){
+    if(mark>=90){
+        console.log("you got gpa 4");
+    }
+    else{
+        console.log('you got gpa 3.75');
+    }
+}
+else if(mark<=79 && mark >=70) {
+    console.log('you got gpa 3.50');
+}
+else{
+    console.log('you got gpa 3');
 }
