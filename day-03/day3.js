@@ -13,3 +13,7 @@ while(num<=10){
 }
 
 // for loop 
+    //here i=1 means lop variable; i<=10 means loop condition: i++ means increment or decrement variable value;
+for (var i = 1; i <= 10; i++){
+    console.log(i);
+}
