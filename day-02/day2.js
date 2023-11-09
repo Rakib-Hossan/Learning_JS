@@ -61,11 +61,31 @@ console.log(fullName);
 console.log(typeof(fullName));
 
 // how to join all element of an array 
-
 var love = ['i', 'love', 'programming'];
 console.log(love);
 var fullMassage = love.join(' ');
 console.log(fullMassage);
+
+// how to add two different array in an single array 
+var bestFriends = ['seam','tanvir','akash','shuvo'];
+var casualFriends = ['rony','shakib','jabed'];
+var allFriends = bestFriends.concat(casualFriends);
+console.log(allFriends);
+
+// how to slices out a piece of an array into a new array.
+var names = ['rakib', 'hridoy', 'hamim', 'rony'];
+var sliceNames = names.slice(1,3);
+console.log(sliceNames);
+
+// how to add new elements on an array to a specific index of an array 
+var friends = ['rakib', 'hridoy', 'hamim', 'rony'];
+friends.splice(1,0,'hossan','redoy');
+console.log(friends);
+
+// how to check element exit on an array 
+var friends = ['rakib', 'hossan', 'hridoy'];
+var searchFriends = friends.includes('hossan');
+console.log(searchFriends);
 
 // comparison operator 
 
