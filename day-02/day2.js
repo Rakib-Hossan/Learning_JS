@@ -53,6 +53,20 @@ var picnicFee = [500, 450, 480, 470, 570];
 picnicFee.shift();
 console.log(picnicFee);
 
+// how to convert an array into a string 
+var names = ['rakib', 'hossan', 'redoy'];
+console.log(names);
+var fullName = names.toString();
+console.log(fullName);
+console.log(typeof(fullName));
+
+// how to join all element of an array 
+
+var love = ['i', 'love', 'programming'];
+console.log(love);
+var fullMassage = love.join(' ');
+console.log(fullMassage);
+
 // comparison operator 
 
 // comparison with > operator
