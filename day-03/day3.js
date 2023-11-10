@@ -74,3 +74,26 @@ function add(x,y){
     console.log(result);
 }
 add(5,4);
+
+// function with return 
+function moneyGetBack(money,cost){
+    var getBack = money - cost;
+    return getBack;
+}
+
+var payment = moneyGetBack(1000,780);
+console.log("Money Get Back:", payment);
+
+
+/******************
+    Object in JS
+=>  An object is a collection of properties, and a property is an association between a name (or key) and a value
+
+    Syntax of object in js
+=> var object_name = {
+    property_name : property value;
+    property_name : property value;
+}
+******************/
+
+// how to declare a object in js 
