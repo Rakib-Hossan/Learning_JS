@@ -97,3 +97,12 @@ console.log("Money Get Back:", payment);
 ******************/
 
 // how to declare a object in js 
+var mobile = {
+    name : "xaiomi",
+    model : "Note 9",
+    ram : "4GB",
+    rom : "64GB",
+    price : 19500
+}
+
+console.log(mobile);
