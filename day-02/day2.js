@@ -1,7 +1,7 @@
-/*
+/***************
 what is array?
 => An array is like a container who can hold many values under a single variable, and we can access the values by referring to an index number.
-*/
+****************/
 
 // how to declare an array 
 

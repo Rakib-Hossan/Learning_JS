@@ -1,7 +1,7 @@
-/*
+/************
     Loop in js
 =>  Loops can execute a block of code a number of times. if we want to run the same code over and over again, each time with a different value.
-*/
+*************/
 
 // while loop 
 
@@ -18,10 +18,10 @@ for (var i = 1; i <= 10; i++){
     console.log(i);
 }
 
-/*
+/************
     break statement 
 =>  The break statement "jumps out" of a loop.
-*/ 
+*************/ 
 // break example 
 for( var i=1; i<=20; i++){
     console.log("i love you");
@@ -31,10 +31,10 @@ for( var i=1; i<=20; i++){
     }
 }
 
-/*
+/******************
     continue statement
 =>  The continue statement "jumps over" one iteration in the loop.
-*/
+******************/
 // continue example 
 var num = [50, 25, 14, 51, 65, 27, 100, 87, 54, 90];
 for (var i=0; i<num.length;i++){
@@ -44,3 +44,33 @@ for (var i=0; i<num.length;i++){
     }
     console.log(number);
 }
+
+/******************
+    Function in JS
+=>  A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
+
+    Syntax of function in js
+=> function function_name(parameters){
+    -------codes--------
+    -------codes--------
+}
+******************/
+
+//simple function
+function massage(){
+    console.log('I Love Bangladesh');
+}
+massage();
+
+// function with parameter 
+function massage(love){
+    console.log(love);
+}
+massage('i love programming');
+
+// function with multiple parameter 
+function add(x,y){
+    var result = x + y;
+    console.log(result);
+}
+add(5,4);
