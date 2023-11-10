@@ -104,5 +104,25 @@ var mobile = {
     rom : "64GB",
     price : 19500
 }
+console.log(mobile);
 
+// how to find specific property value from an object 
+var mobile = {
+    name : "xaiomi",
+    model : "Note 9",
+    ram : "4GB",
+    rom : "64GB",
+    price : 19500
+}
+console.log(mobile.ram);
+
+// how to change specific property value in an Object
+var mobile = {
+    name : "xaiomi",
+    model : "Note 9",
+    ram : "4GB",
+    rom : "64GB",
+    price : 19500
+}
+mobile.ram = "8GB";
 console.log(mobile);
