@@ -121,3 +121,16 @@ function make_avg(value){
 
 var result = make_avg(numbers);
 console.log(result);
+
+//Problem-14 : Write a function which takes an integer value and tells whether this value is even or odd.
+function oddEven(num){
+
+    if(num%2==0){
+        return "even";
+    }
+    else{
+        return "odd";
+    }
+}
+var result = oddEven(21);
+console.log(result);
