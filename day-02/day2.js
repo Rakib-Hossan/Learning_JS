@@ -163,3 +163,25 @@ else if(mark<=79 && mark >=70) {
 else{
     console.log('you got gpa 3');
 }
+
+// switch statement 
+
+var color = "green";
+
+switch(color){
+    case 'green':
+        console.log('Please Go');
+        break;
+    
+    case 'yellow':
+        console.log('Please wait');
+        break;
+    
+    case 'red':
+        console.log('Please stop');
+        break;
+    
+    default:
+        console.log('This is not traffic light');
+
+}

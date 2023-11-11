@@ -97,3 +97,27 @@ var rolls = [1, 2, 5, 8, 25, 27, 33, 50];
 for (let i=0; i<=rolls.length; i++){
     console.log(rolls[i]);
 }
+
+//Problem-12 : write js code for make average 3 values using js function
+function makeAverage (num1,num2,num3){
+    var total = num1 + num2 +num3;
+    var average = total/3;
+    return average;
+}
+var result = makeAverage(120,258,121);
+console.log(result);
+
+//Problem-13 : write a function which will take an array of integers and the size of that array and return the average of those values.
+var numbers = [12,25,20,125,14,32];
+
+function make_avg(value){
+    var sum = 0;
+    for(var i = 0; i<value.length; i++){
+        var sum = sum + value[i];
+        var average = sum/value.length;
+    }
+    return average;
+}
+
+var result = make_avg(numbers);
+console.log(result);

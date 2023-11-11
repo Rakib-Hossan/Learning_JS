@@ -164,3 +164,20 @@ var propValue = 25000;
 mobile[propertyName] = propValue;
 console.log( propertyName, propValue);
 console.log(mobile)
+
+// how to excess all property of an object by using for loop
+var details = {
+    name         : 'Shakib',
+    age          :  27,
+    height       : '5 fit 6 inch',
+    education    : 'Bsc',
+    hobby        : 'programming'
+}
+
+var key = Object.keys(details);
+
+for (var i = 0; i < key.length; i++){
+    var propertyName = key[i];
+    var propertyValue = details[propertyName];
+    console.log(propertyName,' : ',propertyValue);
+}
