@@ -115,6 +115,7 @@ var mobile = {
     price : 19500
 }
 console.log(mobile.ram);
+console.log(mobile['rom']); //another way to find object property value
 
 // how to change specific property value in an Object
 var mobile = {
@@ -125,4 +126,41 @@ var mobile = {
     price : 19500
 }
 mobile.ram = "8GB";
+mobile['rom'] = "128GB" //another way to set object property value
 console.log(mobile);
+
+// how to find object property and values separately
+var mobile = {
+    name : "xaiomi",
+    model : "Note 9",
+    ram : "4GB",
+    rom : "64GB",
+    price : 19500
+}
+
+// find Object property names
+var properties = Object.keys(mobile);
+console.log(properties);
+
+// find Object property values 
+var propertiesValues = Object.values(mobile);
+console.log(propertiesValues);
+
+// Dynamic way to set object property and values 
+var mobile = {
+    name : "xaiomi",
+    model : "Note 9",
+    ram : "4GB",
+    rom : "64GB",
+    price : 19500
+}
+// set property Name 
+var propertyName = "price";
+var propertyValues = mobile[propertyName];
+console.log(propertyName, propertyValues);
+console.log(mobile)
+// set property Values
+var propValue = 25000;
+mobile[propertyName] = propValue;
+console.log( propertyName, propValue);
+console.log(mobile)
