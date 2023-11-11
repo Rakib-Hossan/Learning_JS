@@ -134,3 +134,40 @@ function oddEven(num){
 }
 var result = oddEven(21);
 console.log(result);
+
+// Problem-15 : write a program to convert inch to feet 
+function inchToFeet(inches){
+    let feet = inches/12;
+    return feet;
+}
+let yourFeet = inchToFeet(258);
+console.log(yourFeet,"feet");
+
+// Problem-16 : write a program to check leap yaer 
+function leapYear(year){
+    if((year%4==0) && (year%400==0)|| (year%100!=0)){
+        return 'Leap Year';
+    }
+    else{
+       return 'Not Leap Year';
+    }
+}
+
+var checkYear = leapYear(2000);
+console.log(checkYear);
+
+//Problem-17 : write a program to get Odd Numbers of an array and get odd Sum of an array
+let numbers = [12,65,14,15,17,89,54,61,48,56];
+
+function oddSum(num){
+    let sum = 0;
+    for (let i =0; i<num.length; i++){
+        if(num[i]%2!=0){
+          sum = sum + num[i];
+        }
+    }
+    return sum;
+}
+
+let result = oddSum(numbers);
+console.log(result);
