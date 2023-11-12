@@ -171,3 +171,15 @@ function oddSum(num){
 
 let result = oddSum(numbers);
 console.log(result);
+
+//Problem-17 : write a program to get factorial of number
+function factorial(n){
+    let fact = 1;
+    for(let i = 1; i <= n; i++){
+      fact = fact * i;
+    }
+    return fact;
+  }
+  
+  var factValue = factorial(7);
+  console.log(factValue);
