@@ -157,3 +157,14 @@ var multi = numOne * numTwo;
 var newAns = multi.toFixed(2);
 var ans = parseFloat(newAns);
 console.log(ans);
+
+
+/*************
+string method
+*************/
+
+// slice method
+let text = "a quick brown fox jumps over the lazy dog";
+let sliceText = text.slice(8,17)
+console.log(sliceText);
+
