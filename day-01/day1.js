@@ -1,5 +1,5 @@
 /****************
-what is variable?
+(#) what is variable?
 --> Variables are Containers for Storing Data
 ****************/
 
@@ -163,8 +163,63 @@ console.log(ans);
 string method
 *************/
 
+// toUpperCase method
+let myName = 'rakib hossan redoy';
+let upperCaseName = myName.toUpperCase();
+console.log(upperCaseName);
+
+// toLowerCase method 
+let sampleText = 'A QUICK BROWN FOX JUMPS OVER THE LAZY DOG';
+let lowerCaseText = sampleText.toLowerCase();
+console.log(lowerCaseText);
+
+// replace method 
+let hobby = "Programming, Cricket, Reading"
+let newHobby = hobby.replace('Reading','Traveling');
+console.log(newHobby);
+
 // slice method
-let text = "a quick brown fox jumps over the lazy dog";
-let sliceText = text.slice(8,17)
+let textSlice = "a quick brown fox jumps over the lazy dog";
+let sliceText = textSlice.slice(8,17)
 console.log(sliceText);
+
+// substring method 
+let textSub = 'A quick brown fox jumps over the lazy dog';
+let subStringText = textSub.substring(8,13);
+console.log(subStringText);
+
+//split method
+let textSplit = 'twinkle, twinkle little star. How I wonder, what you are? Like above the world so high. Like a diamond in the sky';
+let splitText = textSplit.split('.');
+console.log(splitText);
+
+// concat method 
+const myFirst = 'Rakib';
+const myLast = 'Hossan';
+const myFullName = myFirst.concat(' ', myLast);
+console.log(myFullName);
+
+/*******************
+ string searching
+ *******************/
+
+// includes method
+const massage = 'my country is my first love';
+const isIncludesMassage = massage.includes('my');
+console.log(isIncludesMassage);
+
+// indexOf method 
+const textIndex = 'there are nothing to hide';
+const indexText = textIndex.indexOf('nothing');
+console.log(indexText);
+
+//startsWith method
+const textStart = 'my passion is my strength';
+const startText = textStart.startsWith('m');
+console.log(startText);
+
+//endsWith method
+const textEnd = 'my passion is my strength';
+const endText = textEnd.endsWith('strength');
+console.log(endText);
 

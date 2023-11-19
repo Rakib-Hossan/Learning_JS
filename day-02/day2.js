@@ -1,14 +1,15 @@
 /***************
-what is array?
+(#) what is array?
 => An array is like a container who can hold many values under a single variable, and we can access the values by referring to an index number.
 ****************/
 
 // how to declare an array 
 
 var picnicFee = [500, 450, 480, 470, 570]
-
-// here picnicFee is the name of array which is declare like variable
-// the value which is store in array we write under the [...] symbol.
+/***************
+here picnicFee is the name of array which is declare like variable
+the value which is store in array we write under the [...] symbol.
+***************/
 
 // how to find the length of array 
 
@@ -183,5 +184,4 @@ switch(color){
     
     default:
         console.log('This is not traffic light');
-
 }

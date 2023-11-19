@@ -1,5 +1,5 @@
 /************
-    Loop in js
+(#) Loop in js
 =>  Loops can execute a block of code a number of times. if we want to run the same code over and over again, each time with a different value.
 *************/
 
@@ -19,7 +19,7 @@ for (var i = 1; i <= 10; i++){
 }
 
 /************
-    break statement 
+(#) break statement 
 =>  The break statement "jumps out" of a loop.
 *************/ 
 // break example 
@@ -32,7 +32,7 @@ for( var i=1; i<=20; i++){
 }
 
 /******************
-    continue statement
+(#) continue statement
 =>  The continue statement "jumps over" one iteration in the loop.
 ******************/
 // continue example 
@@ -46,10 +46,10 @@ for (var i=0; i<num.length;i++){
 }
 
 /******************
-    Function in JS
+(#) Function in JS
 =>  A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
 
-    Syntax of function in js
+(#) Syntax of function in js
 => function function_name(parameters){
     -------codes--------
     -------codes--------
@@ -86,10 +86,10 @@ console.log("Money Get Back:", payment);
 
 
 /******************
-    Object in JS
+(#) Object in JS
 =>  An object is a collection of properties, and a property is an association between a name (or key) and a value
 
-    Syntax of object in js
+(#) Syntax of object in js
 => var object_name = {
     property_name : property value;
     property_name : property value;
