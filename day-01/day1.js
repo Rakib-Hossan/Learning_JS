@@ -188,6 +188,11 @@ let textSub = 'A quick brown fox jumps over the lazy dog';
 let subStringText = textSub.substring(8,13);
 console.log(subStringText);
 
+// substr method 
+let SubText = 'A quick brown fox jumps over the lazy dog';
+let subStrText = SubText.substr(8,15);
+console.log(subStrText);
+
 //split method
 let textSplit = 'twinkle, twinkle little star. How I wonder, what you are? Like above the world so high. Like a diamond in the sky';
 let splitText = textSplit.split('.');
@@ -198,6 +203,11 @@ const myFirst = 'Rakib';
 const myLast = 'Hossan';
 const myFullName = myFirst.concat(' ', myLast);
 console.log(myFullName);
+
+// trim method 
+let textTrim = '    A quick brown fox jumps over the lazy dog';
+let TrimText = textTrim.trim();
+console.log(TrimText);
 
 /*******************
  string searching
