@@ -223,9 +223,24 @@ const textIndex = 'there are nothing to hide';
 const indexText = textIndex.indexOf('nothing');
 console.log(indexText);
 
+// lastindexOf 
+const lastText = 'there are nothing to hide';
+const lastIndexText = lastText.lastIndexOf('hide');
+console.log(lastIndexText); 
+
+// search
+const textSearch = 'there are nothing to hide';
+const searchText = textSearch.search('nothing');
+console.log(searchText);
+
+// match
+const textMatch = 'there are nothing to hide';
+const matchText = textMatch.match('e');
+console.log(matchText);
+
 //startsWith method
 const textStart = 'my passion is my strength';
-const startText = textStart.startsWith('m');
+const startText = textStart.startsWith('my');
 console.log(startText);
 
 //endsWith method
