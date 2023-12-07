@@ -88,8 +88,75 @@ var friends = ['rakib', 'hossan', 'hridoy'];
 var searchFriends = friends.includes('hossan');
 console.log(searchFriends);
 
-// comparison operator 
+// sort method in array 
+const nameSort = ['rakib','rasib','akib','shakib'];
+const sortName = nameSort.sort();
+console.log(sortName);
 
+// reverse method in array 
+const nameReverse = ['rakib','rasib','akib','shakib','zakir'];
+const reverseName = nameReverse.reverse();
+console.log(reverseName);
+
+/****************
+ array iteration
+ ***************/
+
+// forEach 
+const eachPoints = [10, 5, 25, 14, 19, 20];
+function myForEach(v,i){
+    console.log("index " + i + " = " + v);
+}
+eachPoints.forEach(myForEach);
+
+// map 
+const points = [10, 5, 25, 14, 19, 20];
+function myMap(v){
+    return v * 2;
+}
+const doublePoints = points.map(myMap);
+console.log(doublePoints);
+
+// filter 
+const friendName = ['rakib', 'akib', 'rony', 'shadin', 'rohan', 'shakib'];
+function myFilter(v,i){
+    return v.startsWith('r');;
+}
+const filterName = friendName.filter(myFilter);
+console.log(filterName);
+
+// reduce 
+const reduceNumbers = [45, 4, 9, 16, 25];
+function reduceSum(total, value) {
+  return total + value;
+}
+let sum = reduceNumbers.reduce(reduceSum);
+console.log(sum);
+
+// every 
+const friendsName = ['rakib', 'akib', 'rony', 'shadin', 'rohan', 'shakib'];
+function myEvery(value){
+    return value.endsWith('kib'); 
+}
+/* when all condition are true 
+ then its return true */
+const isEvery = friendsName.every(myEvery);
+console.log(isEvery);
+
+// some 
+const someFriend = ['rakib', 'akib', 'rony', 'shadin', 'rohan', 'shakib'];
+function mySome(value){
+    return value.endsWith('kib');
+}
+/* when any one condition are true 
+ then its return true */
+const isSome = someFriend.some(mySome);
+console.log(isSome);
+
+
+/************ 
+ comparison operator 
+************/
 // comparison with > operator
 console.log(6>4);
 
