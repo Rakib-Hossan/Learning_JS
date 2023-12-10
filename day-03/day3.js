@@ -4,6 +4,32 @@
  const day = new Date();
  console.log(day);
 
+ 
+/**********
+  date get method 
+ ***********/
+
+// getTime method 
+const dayTime = new Date();
+const timeOfDay = dayTime.getTime();
+console.log(timeOfDay);
+
+// getFullYear method 
+const dayYear = new Date();
+const YearOfDay = dayTime.getFullYear();
+console.log(YearOfDay);
+
+// getMonth method 
+const dayMonth = new Date();
+const MonthOfDay = dayTime.getMonth();
+console.log(MonthOfDay);
+
+// getDate method 
+const dayDate = new Date();
+const DayOfDay = dayTime.getDate();
+console.log(DayOfDay);
+
+
 /************
 (#) Loop in js
 =>  Loops can execute a block of code a number of times. if we want to run the same code over and over again, each time with a different value.
