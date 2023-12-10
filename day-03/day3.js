@@ -6,7 +6,7 @@
 
  
 /**********
-  date get method 
+  date method 
  ***********/
 
 // getTime method 
@@ -16,17 +16,22 @@ console.log(timeOfDay);
 
 // getFullYear method 
 const dayYear = new Date();
-const YearOfDay = dayTime.getFullYear();
+const YearOfDay = dayYear.getFullYear();
 console.log(YearOfDay);
 
 // getMonth method 
 const dayMonth = new Date();
-const MonthOfDay = dayTime.getMonth();
+const MonthOfDay = dayMonth.getMonth();
 console.log(MonthOfDay);
 
 // getDate method 
 const dayDate = new Date();
-const DayOfDay = dayTime.getDate();
+const DateOfDay = dayDate.getDate();
+console.log(DateOfDay);
+
+// getDay method 
+const dayDay = new Date();
+const DayOfDay = dayDay.getDay();
 console.log(DayOfDay);
 
 
