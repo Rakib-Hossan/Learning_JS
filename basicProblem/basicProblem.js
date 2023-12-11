@@ -183,3 +183,21 @@ function factorial(n){
   
   var factValue = factorial(7);
   console.log(factValue);
+
+// Problem-19 : write a program to print random number between 1 to 6
+function randomNumber(min,max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  console.log(randomNumber(1,6));
+
+// Problem-20 : write a program to sort name in alphabetically
+const studentName = ['rihan', 'asad', 'sagor', 'akib', 'basar'];
+console.log(studentName.sort());
+
+// Problem-21 : write a program to sort numbers 
+const studentRoll = [5, 2, 8, 10, 3, 4, 7, 6, 9, 1];
+const sortedRoll = studentRoll.sort(function(a,b){
+  return a-b;
+});
+console.log(sortedRoll);
+
