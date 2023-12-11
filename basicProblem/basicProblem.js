@@ -146,10 +146,10 @@ console.log(yourFeet,"feet");
 // Problem-16 : write a program to check leap yaer 
 function leapYear(year){
     if((year%4==0) && (year%400==0)|| (year%100!=0)){
-        return 'Leap Year';
+        return `${year} is Leap Year`;
     }
     else{
-       return 'Not Leap Year';
+       return `${year} is Not Leap Year`;
     }
 }
 
@@ -201,3 +201,17 @@ const sortedRoll = studentRoll.sort(function(a,b){
 });
 console.log(sortedRoll);
 
+// Problem-22 : write a program to find how many vowels in a sentence 
+const vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'];
+const sentence = 'A quick brown fox jumps over the lazy dogs';
+function countVowels(sentence){
+    let count = 0;
+    const letters = Array.from(sentence); // to convert string to array
+    letters.forEach(function(value){
+      if(vowels.includes(value)){
+        count++;
+      }
+    });
+    return count;
+  }
+  console.log(countVowels(sentence));
