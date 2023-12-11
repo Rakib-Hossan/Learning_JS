@@ -34,7 +34,55 @@ const dayDay = new Date();
 const DayOfDay = dayDay.getDay();
 console.log(DayOfDay);
 
+/**********
+ Js Math
+ **********/
+// Number to Interger 
 
+// Math.round(x) {Returns x rounded to its nearest integer}
+console.log(Math.round(5.3));
+
+// Math.ceil(x) {Returns x rounded up to its nearest integer}
+console.log(Math.ceil(5.5));
+
+// Math.floor(x) {Returns x rounded down to its nearest integer} 
+console.log(Math.floor(4.6));
+
+// Math.trunc(x) {Returns the integer part of x} 
+console.log(Math.trunc(4.2));
+
+// Math.sign(x) {Returns the value positive or negative} 
+console.log(Math.sign(-2));
+
+// Math.pow(x,y) {Returns the value of x to the power of y} 
+console.log(Math.pow(5,2));
+
+// Math.sqrt(x) {Returns the square root of x}
+console.log(Math.sqrt(9));
+
+// Math.abs(x) {returns the absolute (positive) value of x}
+console.log(Math.abs(-2.5));
+
+// Math.min() {Returns the lowest value in a list of arguments}
+console.log(Math.min(2,4,1,6,10,25,9));
+
+// Math.max() {Returns the highest value in a list of arguments}
+console.log(Math.max(2,4,1,6,10,25,9));
+
+// Math.random() {Returns a random number between 0 (inclusive), and 1 (exclusive)}
+console.log(Math.random());
+
+// Math.random() used with Math.floor() can be used to return random integers 
+console.log(Math.floor(Math.random() * 10));
+
+// A Proper Random Function
+// This JavaScript function always returns a random number between min and max (both included)
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
+  console.log(getRndInteger(1,10));
+
+  
 /************
 (#) Loop in js
 =>  Loops can execute a block of code a number of times. if we want to run the same code over and over again, each time with a different value.
