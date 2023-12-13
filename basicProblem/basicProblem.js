@@ -215,3 +215,30 @@ function countVowels(sentence){
     return count;
   }
   console.log(countVowels(sentence));
+
+// Problem-23 : write a program to find duplicate elements in an array
+
+// using filter method 
+const checkNumbers = [2,5,4,2,4,6,4,10,5,74, 4 ,1,];
+const duplicates = checkNumbers.filter(function(value,index,array){
+  return array.indexOf(value) !== index;
+})
+console.log(duplicates);
+
+// using for loop 
+const checkNumbers = [2,5,4,2,4,6,4,10,5,74, 4 ,1,];
+let freshNumbers = [];
+let duplicate =  [];
+function duplicates(num){
+  
+  for(let i = 0; i<num.length; i++){
+    if(freshNumbers.indexOf(num[i]) === -1){
+      freshNumbers.push(num[i]);
+    }
+    else{
+      duplicate.push(num[i]);
+    }
+}
+return {freshNumbers,duplicate};
+}
+console.log(duplicates(checkNumbers));
