@@ -226,7 +226,7 @@ const duplicates = checkNumbers.filter(function(value,index,array){
 console.log(duplicates);
 
 // using for loop 
-const checkNumbers = [2,5,4,2,4,6,4,10,5,74, 4 ,1,];
+const checkNumber = [2,5,4,2,4,6,4,10,5,74, 4 ,1,];
 let freshNumbers = [];
 let duplicate =  [];
 function duplicates(num){
@@ -241,4 +241,4 @@ function duplicates(num){
 }
 return {freshNumbers,duplicate};
 }
-console.log(duplicates(checkNumbers));
+console.log(duplicates(checkNumber));
