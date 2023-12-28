@@ -252,3 +252,7 @@ switch(color){
     default:
         console.log('This is not traffic light');
 }
+
+// short form of using condition 
+let age = 15;
+console.log(age >= 18 ? "you are adult" : 'you are not adult');
