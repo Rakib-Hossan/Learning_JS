@@ -103,6 +103,19 @@ for (var i = 1; i <= 10; i++){
     console.log(i);
 }
 
+// for in loop {it best used for object}
+const mySelf = { fname: "Rakib", mname:"hossan",lname:"redoy"};
+
+for(let fullName in mySelf){
+  console.log(mySelf[fullName]);
+}
+
+// for of loop {best used for array or any iterable object}
+const numArray = [ 10, 12, 54, 123, 15]
+for (let x of numArray){
+    console.log(x);
+}
+
 /************
 (#) break statement 
 =>  The break statement "jumps out" of a loop.
