@@ -89,13 +89,21 @@ function getRndInteger(min, max) {
 *************/
 
 // while loop 
-
 var num = 1; //loop variable
 //while loop condition
 while(num<=10){
     console.log(num);
     num++; // increasing or decreasing variable value;
 }
+
+// do...while loop 
+const numBars = [10,20,25,36,14];
+let ii = 0;
+do{
+  console.log(numBars[ii]);
+  ii++;
+}
+while(i<numBars.length)
 
 // for loop 
     //here i=1 means lop variable; i<=10 means loop condition: i++ means increment or decrement variable value;
