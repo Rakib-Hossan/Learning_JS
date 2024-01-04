@@ -151,6 +151,24 @@ for (var i=0; i<num.length;i++){
     console.log(number);
 }
 
+/*********
+ JS Sets
+ *******/
+// Define JS Sets 
+const nameSet = new Set(['R','a','k','i','b']);
+console.log(nameSet);
+
+// Add element in sets 
+nameSet.add('');
+nameSet.add('H');
+nameSet.add('o');
+nameSet.add('s');
+nameSet.add('s');
+nameSet.add('a');
+nameSet.add('n');
+console.log(nameSet);
+// In sets we cannot add an element onces 
+
 /******************
 (#) Function in JS
 =>  A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
