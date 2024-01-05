@@ -169,6 +169,16 @@ nameSet.add('n');
 console.log(nameSet);
 // In sets we cannot add an element onces 
 
+// Delete element in sets 
+nameSet.delete(''); // we delete '' element from the sets
+console.log(nameSet);
+
+// has method in sets to check element in a set 
+console.log(nameSet.has("H"))
+
+// value method in sets to see values of sets
+console.log(nameSet.values());
+
 /******************
 (#) Function in JS
 =>  A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
