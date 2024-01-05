@@ -179,6 +179,30 @@ console.log(nameSet.has("H"))
 // value method in sets to see values of sets
 console.log(nameSet.values());
 
+/*********
+ JS Map
+ ********/
+// Define JS Map
+const products = new Map([['Books', 450],['Pen',120],['Eraser',50]]);
+console.log(products);
+
+// Add element in Map 
+products.set('Pencil Box',500);
+console.log(products);
+
+// Find the how much element in a map 
+console.log(products.size);
+
+// Delete element in Map 
+products.delete('Eraser');
+console.log(products)
+
+// Check element has on map 
+console.log(products.has('Pen'));
+
+// To Get key value in Map 
+console.log(products.get('Pen'));
+
 /******************
 (#) Function in JS
 =>  A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
