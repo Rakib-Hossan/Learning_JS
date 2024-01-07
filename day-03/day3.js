@@ -339,3 +339,26 @@ for (var i = 0; i < key.length; i++){
     var propertyValue = details[propertyName];
     console.log(propertyName,' : ',propertyValue);
 }
+
+/****************
+JS try...catch , throw
+****************/
+// js try...catch
+try{
+    let a = 20;
+  console.log(a+b);
+  }catch(err){
+    console.log(err.massage);
+  }
+  
+  // js throw 
+  let x = 10;
+  try{
+    if(x == '') throw 'empty';
+    if(isNaN(x)) throw 'not a number';
+    if(x<5) throw 'too low';
+    if(x>10) throw 'too high';
+  
+  } catch(err){
+    console.log(err)
+  }
