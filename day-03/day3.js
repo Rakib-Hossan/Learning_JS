@@ -362,3 +362,35 @@ try{
   } catch(err){
     console.log(err)
   }
+
+  /****************
+ JS this Keyword
+ ***************/
+
+const myDetails = {
+    fname : 'rakib',
+    lname : 'hossan',
+    age : 26,
+    fullName : function (){
+      return this.fname + ' ' + this.lname;
+      // the this keyword refers to myDetails object
+    }
+  }
+
+console.log(myDetails.fullName());
+
+// using this with call()
+const myInfo = {
+  age : 26,
+  fullName : function (){
+    return this.fname + ' ' + this.lname;
+    //the this keyword refers to myName object
+  }
+}
+
+const myName = {
+  fname : 'rakib',
+  lname : 'hossan',
+}
+
+console.log(myInfo.fullName.call(myName));
