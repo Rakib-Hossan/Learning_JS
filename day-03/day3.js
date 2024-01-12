@@ -394,3 +394,51 @@ const myName = {
 }
 
 console.log(myInfo.fullName.call(myName));
+
+/******************
+ JS arrow function
+ *****************/
+
+// simple arrow function 
+let myFName = () =>'rakib hossan';
+console.log(myFName());
+
+// arrow function with parameter 
+
+// single parameter 
+let age = num => 'age' + " : " +num;
+console.log(age(26));
+
+// multiple parameter 
+let sumResult = (a,b) => {
+  let result = a + b;
+  console.log("Sum is : " + result)
+}
+sumResult(25,15);
+
+/****************
+ JS Class
+ ***************/
+// simple class in js 
+class Friend{
+  constructor(name, age){
+    this.fname = name;
+    this.fage = age;
+  }
+}
+
+const FriendOne = new Friend('Seam', 27);// Using Friend class we create FriendOne object.
+console.log(FriendOne);
+
+// In class we also create function 
+class Friend{
+  constructor(name, age){
+    this.fname = name;
+    this.fage = age;
+  }
+  play(status){
+    console.log (this.fname + " is playing " +status);
+  }
+}
+const FriendOne = new Friend('Seam', 27);
+FriendOne.play("cricket");
