@@ -440,5 +440,5 @@ class Friend{
     console.log (this.fname + " is playing " +status);
   }
 }
-const FriendOne = new Friend('Seam', 27);
-FriendOne.play("cricket");
+const FriendNumOne = new Friend('Seam', 27);
+FriendNumOne.play("cricket");

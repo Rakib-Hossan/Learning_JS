@@ -242,3 +242,29 @@ function duplicates(num){
 return {freshNumbers,duplicate};
 }
 console.log(duplicates(checkNumber));
+
+// Problem-24 : how many time 'js' have in this follow sentence. What is the first index of 'js'
+
+const givenSentence = 'Hi, this is Rakib. My hobby is to write program in JS. JS is an advanced level programming language. JS is most important language for web development. Without JS the website cannot run efficiently.';
+
+const matchJS = givenSentence.match(/js/gi);
+const matchTime = matchJS ? matchJS.length : 0;
+console.log('The match time is: '+matchTime);
+
+const firstIndexMatch = givenSentence.search(/js/gi);
+const position = firstIndexMatch >= 0 ? firstIndexMatch : "not found";
+console.log('The first index of match: '+position);
+
+//Problem-25 : Find the index number of 'd' from the given array.
+
+function linearSearch(arr, val){
+  let l = arr.length;
+  for(let i = 0; i < l; i++){
+    if(arr[i]=== val){
+      return i;
+    }
+  }
+  return "not found!"
+ }
+
+ console.log(linearSearch(['a','b','c','d','e','f','g','h'], 'c'));
