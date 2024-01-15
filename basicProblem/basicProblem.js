@@ -328,3 +328,25 @@ console.log(trueValue);
 let trueElement = mixedArr.filter(Boolean);
 
 console.log(trueElement);
+
+//Problem-29 : Find the js falsy value from an Object
+
+const obj = {
+  a : 'rhr', b : undefined,
+  c : 'rakib hossan', d : false, 
+  e : '', f : 'bangladesh', 
+  g : 54, h : 't', 
+  i : true, j : 'Thank You',
+  k : NaN,
+};
+
+const trueObj = function(obj) {
+  for (let i in obj){
+    if(!obj[i]){
+       delete obj[i];
+    }
+  }
+  return obj;
+}
+
+console.log(trueObj(obj));
