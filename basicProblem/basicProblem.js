@@ -135,7 +135,7 @@ function oddEven(num){
 var result = oddEven(21);
 console.log(result);
 
-// Problem-15 : write a program to convert inch to feet 
+//Problem-15 : write a program to convert inch to feet 
 function inchToFeet(inches){
     let feet = inches/12;
     return feet;
@@ -143,7 +143,7 @@ function inchToFeet(inches){
 let yourFeet = inchToFeet(258);
 console.log(yourFeet,"feet");
 
-// Problem-16 : write a program to check leap yaer 
+//Problem-16 : write a program to check leap yaer 
 function leapYear(year){
     if((year%4==0) && (year%400==0)|| (year%100!=0)){
         return `${year} is Leap Year`;
@@ -184,24 +184,24 @@ function factorial(n){
   var factValue = factorial(7);
   console.log(factValue);
 
-// Problem-19 : write a program to print random number between 1 to 6
+//Problem-19 : write a program to print random number between 1 to 6
 function randomNumber(min,max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
   console.log(randomNumber(1,6));
 
-// Problem-20 : write a program to sort name in alphabetically
+//Problem-20 : write a program to sort name in alphabetically
 const studentName = ['rihan', 'asad', 'sagor', 'akib', 'basar'];
 console.log(studentName.sort());
 
-// Problem-21 : write a program to sort numbers 
+//Problem-21 : write a program to sort numbers 
 const studentRoll = [5, 2, 8, 10, 3, 4, 7, 6, 9, 1];
 const sortedRoll = studentRoll.sort(function(a,b){
   return a-b;
 });
 console.log(sortedRoll);
 
-// Problem-22 : write a program to find how many vowels in a sentence 
+//Problem-22 : write a program to find how many vowels in a sentence 
 const vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'];
 const sentence = 'A quick brown fox jumps over the lazy dogs';
 function countVowels(sentence){
@@ -216,7 +216,7 @@ function countVowels(sentence){
   }
   console.log(countVowels(sentence));
 
-// Problem-23 : write a program to find duplicate elements in an array
+//Problem-23 : write a program to find duplicate elements in an array
 
 // using filter method 
 const checkNumbers = [2,5,4,2,4,6,4,10,5,74, 4 ,1,];
@@ -243,7 +243,7 @@ return {freshNumbers,duplicate};
 }
 console.log(duplicates(checkNumber));
 
-// Problem-24 : how many time 'js' have in this follow sentence. What is the first index of 'js'
+//Problem-24 : how many time 'js' have in this follow sentence. What is the first index of 'js'
 
 const givenSentence = 'Hi, this is Rakib. My hobby is to write program in JS. JS is an advanced level programming language. JS is most important language for web development. Without JS the website cannot run efficiently.';
 
@@ -268,3 +268,63 @@ function linearSearch(arr, val){
  }
 
  console.log(linearSearch(['a','b','c','d','e','f','g','h'], 'c'));
+
+ //Problem-26 : Find the longest string and the index number of longest string from an Array
+
+ const  checkNames= ['rakib hossan redoy', 'shakib Mahmud','hassan Ali','dewan fariha tasnim'];
+ 
+ function longestName(names){
+  let longestWord = '';
+
+  for( longName of names){
+    if(longName.length>longestWord.length){
+      longestWord = longName;
+    }
+  }
+
+  return [longestWord, names.indexOf(longestWord)];
+ }
+
+ console.log(longestName(checkNames));
+
+//Problem-27 : Find the number between 1-100 which is divided by 3,5 and also divided by 3 and 5 together
+
+function fooBar(num){
+  let foobar = [];
+  for(let i = 1; i <= num; i++){
+
+    if(i % 15 === 0){
+      foobar.push(i);
+    }
+    else if(i % 3 === 0){
+      foobar.push(i);
+    }
+    else if(i % 5 === 0){
+      foobar.push(i);
+    }
+  }
+  return foobar;
+}
+
+console.log(fooBar(100));
+
+//Problem-28 : Find the js falsy value from an Array
+
+// using array filter method 
+const mixedArr = ['rhr', undefined, 'rakib hossan', false, '', 'bangladesh', 54, 't', true, 'Thank You', NaN];
+
+let trueValue = mixedArr.filter(function(ele){
+  if(ele){
+    return true;
+  }
+  else{
+    return false;
+  }
+});
+
+console.log(trueValue);
+
+// using Boolean function 
+let trueElement = mixedArr.filter(Boolean);
+
+console.log(trueElement);
