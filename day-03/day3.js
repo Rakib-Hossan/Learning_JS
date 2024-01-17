@@ -442,3 +442,20 @@ class Friend{
 }
 const FriendNumOne = new Friend('Seam', 27);
 FriendNumOne.play("cricket");
+
+/**************
+ JS Constructor
+ **************/
+ //When a function name written by capital letter that function call constructor. Constructor is a template of creating new object; 
+
+ function Human (name, age, country) {
+  this.name = name;
+  this.age = age;
+  this.country = country;
+  this.hobby = function(hobby){
+    return `${name}'s hobby is ${hobby}`;
+  }
+ };
+
+const rakib = new Human('rakib',26,"Bangladesh");
+console.log(rakib.hobby("playing Cricket"));
