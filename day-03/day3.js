@@ -443,6 +443,31 @@ class Friend{
 const FriendNumOne = new Friend('Seam', 27);
 FriendNumOne.play("cricket");
 
+// class inheritance 
+class Details{
+  constructor(name,age){
+    this.name = name;
+    this.age = age;
+  }
+  giveName(){
+    return 'My name is ' + this.name + ' and I am ' + this.age +' years old. ';
+  }
+}
+
+class Hobby extends Details {
+  constructor(name, age, hobby){
+    super(name,age);
+    this.hobby = hobby;
+  }
+  showDetails(){
+    return this.giveName() + this.hobby + ' is my Hobby';
+  }
+}
+
+let myInformation = new Hobby('Rakib',26,'Programming')
+
+console.log(myInformation.showDetails());
+
 /**************
  JS Constructor
  **************/
