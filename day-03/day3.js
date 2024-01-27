@@ -484,3 +484,51 @@ console.log(myInformation.showDetails());
 
 const rakib = new Human('rakib',26,"Bangladesh");
 console.log(rakib.hobby("playing Cricket"));
+
+/********************
+ Asynchronous JavaScript
+ ********************/
+
+//  callbacks in js 
+let payment = true;
+let mark = 90;
+
+function enroll(callback){
+  console.log("Enrollment processing are started");
+
+  setTimeout(function(){
+    if(payment){
+      console.log('Payment successful!!')
+      callback();
+    }
+    else{
+      console.log('Payment is not successful!')
+    }
+  },2000)
+}
+
+function progress(callback){
+  console.log('Course are running');
+ 
+  setTimeout(function(){
+    if(mark>=80){
+      console.log('Course are completed.')
+      callback();
+    }
+    else{
+      console.log('Keep trying');
+    }
+  },3000)
+}
+
+function getCertificate(){
+console.log('Ready to get certificate')
+
+setTimeout(function(){
+  console.log("Congress!! For your performance. Print your certificate.")
+},1000)
+}
+
+enroll(function(){
+  progress(getCertificate);
+});
