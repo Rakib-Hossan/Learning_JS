@@ -532,3 +532,65 @@ setTimeout(function(){
 enroll(function(){
   progress(getCertificate);
 });
+
+// Promise 
+
+let addFee = true;
+let courseMark = 60;
+
+function admission(){
+    console.log('Admission process are started.');
+
+    const admissionPromise = new Promise(function(resolve,reject){
+      setTimeout(function(){
+        if(addFee){
+          console.log('Payment Successful!')
+          resolve();
+        }
+        else{
+          reject('Payment Failed!!')
+        }
+      },2000)
+    })
+
+    return admissionPromise;
+}
+
+function course(){
+  console.log("Course on Progress");
+
+  const coursePromise = new Promise(function(resolve,reject){
+    setTimeout(function(){
+      if(courseMark>=75){
+        console.log('Your are ready to get certificate.')
+        resolve();
+      }
+      else{
+        reject('Keep trying!! You are not eligible to get certificate.')
+      }
+    },3000)
+  })
+
+  return coursePromise;
+}
+
+function getCertified(){
+  console.log("Your certificate on the way");
+
+  const certificatePromise = new Promise(function(resolve){
+    setTimeout(function(){
+      resolve('Congress!! Print your certificate.')
+    },2000)
+  })
+  return certificatePromise;
+}
+
+admission()
+          .then(course)
+          .then(getCertified)
+          .then(function(value){
+            console.log(value);
+          })
+          .catch(function(err){
+            console.log(err);
+         })
