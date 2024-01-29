@@ -594,3 +594,42 @@ admission()
           .catch(function(err){
             console.log(err);
          })
+
+// async-await in js 
+
+let ticketMoney = false;
+
+function ticketBooking(){
+  console.log('Ticket Booking on Progress.');
+
+  const ticketPromise = new Promise(function(resolve,reject){
+    setTimeout(function(){
+      if(ticketMoney){
+        resolve();
+      }
+      else{
+        reject('Payment failed!!');
+      }
+    },2000)
+  })
+  return ticketPromise;
+}
+
+function seatConfirm(){
+  console.log('Seat booking process on progress')
+
+  return Promise.resolve('Congress! Your seat are confirm. You are ready to go.')
+}
+
+async function ticketSystem(){
+  try{
+    await ticketBooking();
+    const message = await seatConfirm();
+    console.log(message);
+  }
+  catch(err){
+    console.log(err);
+  }
+}
+
+ticketSystem();
